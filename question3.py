@@ -9,7 +9,7 @@ number = int(input('Guess the number from 1 to 10: '))
 
 if number<1 or number>10:
     print('The entry is invalid!')
-if number == x:
+elif number == x:
     print('You win!')
 else:
     print('You lose!')
