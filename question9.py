@@ -18,5 +18,5 @@ def true_or_false(a):
         print("the value is NaN")
     else: print("the value is NOT NaN")
 
-
+#instance        
 true_or_false(7) 
