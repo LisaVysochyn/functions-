@@ -14,9 +14,11 @@ def true_or_false(a):
     if a == None:
         print("the value is None")
     else: print("the value is NOT None")
-    if math.isnan(a) == True:
-        print("the value is NaN")
-    else: print("the value is NOT NaN")
-
+    try:
+        if math.isnan(a):
+            print("the value is NaN")
+    except TypeError: print("the value is NOT NaN")
+    else: print("the value is NaN")
+        
 #instance        
-true_or_false(7) 
+true_or_false(a) 
