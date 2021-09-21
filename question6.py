@@ -18,9 +18,8 @@ the number of fives in the list: 0
 [3, 6]
 number of integers in the list are less than 5: 2"""
 
-def listdata(l=input("enter the list of integers: ")):
-    l = l.split(', ')
-    for i in range(len(l)):
+def listdata(l: list):
+    for i in range(len(l)-1):
         l[i] = int(l[i])
     print('Your integer list: ', l)
     print(f"the total number of items in the list: {len(l)}")
